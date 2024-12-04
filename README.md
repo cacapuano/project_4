@@ -1,13 +1,18 @@
-# read me file
+# README.md
+## SciPy.fft
+Using fft is a great way to convert your data from the time domain to the frequency domain.
+## In-class Activity
 Practice with a sinusodal function
 
 1. Generate the continuous sinusoidal signal
 
-`signal = amplitude * np.sin(2 * np.pi * frequency * t + phase)`
+```
+signal = amplitude * np.sin(2 * np.pi * frequency * t + phase)
+```
 
 2. Apply FFT
 
-`fft_result = np.fft.fft(signal)`
+```fft_result = np.fft.fft(signal)`
 
 `fft_freqs = np.fft.fftfreq(len(t), 1/sampling_rate)`
 
