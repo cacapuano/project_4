@@ -6,7 +6,7 @@ Practice with a sinusodal function
 
 1. Generate the continuous sinusoidal signal
 
-```signal = amplitude * np.sin(2 * np.pi * frequency * t + phase)```
+```signal = amplitude * np.sin(2 * np.pi * frequency * t + phase)
 
 2. Apply FFT
 
