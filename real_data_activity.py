@@ -31,10 +31,11 @@ class FFTAnalyzer:
         time = self.data["Time(s)"].values # time data
         signal = self.data[signal_column].values # signal data
         dt = time[1] - time[0]  # time step
-        #N = len(signal)
+# MISSING SECTION - add number of sample, and apply fft and fftfreq        
+	N = 
 
-        #self.freq = fftfreq(N, dt)  # frequency array
-        #fft_signal = fft(signal)  # perform FFT using package
+        self.freq =   
+        fft_signal = 
 
         psd = np.abs(fft_signal)**2 / N  # calculate power Spectral Density
         self.asd = np.sqrt(psd)  # amplitude of the Spectral Density
