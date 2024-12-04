@@ -15,13 +15,13 @@ phases = [0, np.pi/4, np.pi/2]  # Phase shifts of the waves
 # Time vector
 t = np.linspace(0, duration, int(sampling_rate * duration), endpoint=False)
 
+# MISSING SECTION - Generate signal, then apply fft and fftfreq
 # Generate the composite signal by summing sinusoidal waves
-composite_signal = np.sum([amplitude * np.sin(2 * np.pi * frequency * t + phase) 
-                           for amplitude, frequency, phase in zip(amplitudes, frequencies, phases)], axis=0)
+composite_signal = 
 
 # Apply FFT to the composite signal
-fft_result = np.fft.fft(composite_signal)
-fft_freqs = np.fft.fftfreq(len(t), 1/sampling_rate)
+fft_result = 
+fft_freqs = 
 
 # Get the magnitude of the FFT (only positive frequencies)
 fft_magnitude = np.abs(fft_result)
