@@ -1,5 +1,5 @@
 # read me file
-# SciPy.fft
+## SciPy.fft
 Using fft is a great way to convert your data from the time domain to the frequency domain.
 # In-class Activity
 Practice with a sinusodal function
