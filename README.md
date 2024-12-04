@@ -10,7 +10,7 @@ Practice with a sinusodal function
 
 2. Apply FFT
 
-`fft_result = np.fft.fft(signal)`
+```fft_result = np.fft.fft(signal)`
 
 `fft_freqs = np.fft.fftfreq(len(t), 1/sampling_rate)`
 
