@@ -6,38 +6,27 @@ Using ```fft``` and ```fftfreq``` is a great way to convert your data from the t
 ## In-class Activity
 Practice with a sinusodal function. 
 
-1. Generate the continuous sinusoidal signal
+Setting-up the environment
+1. ```mkdir FFT```
+2. ```git clone https://github.com/cacapuano/project_4.git```
+3. Open ```sin_activity.py```
+
+Practice with a known function
+4. Generate the continuous sinusoidal signal
 
 ```
-signal = amplitude * np.sin(frequency * t + phase)
+function = amplitude * np.sin(frequency * t + phase)
 ```
 
-2. Apply FFT
+5. Apply FFT
 
+Plug in the correct argument refering to https://numpy.org/doc/2.1/reference/generated/numpy.fft.fft.html#numpy.fft.fft
 ```
 fft_result = np.fft.fft(__)
 ```
-
+Plug in the correct argument refering to https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.fftfreq.html
 ```
 fft_freqs = np.fft.fftfreq(__)
 ```
 
-4. Get the magnitude of the FFT (only positive frequencies)
-
-```
-fft_magnitude = np.abs(fft_result)
-```
-
-```
-positive_freqs = fft_freqs[:len(fft_freqs)//2]
-```
-
-```
-positive_magnitude = fft_magnitude[:len(fft_magnitude)//2]
-```
-
-5. Create dataset (time vs signal, frequency vs fft magnitude)
-
-`time_data = np.column_stack((t, signal))  # Time-domain signal`
-
-`frequency_data = np.column_stack((positive_freqs, positive_magnitude))  # Frequency-domain data (positive frequencies)`
+3. Run ```
