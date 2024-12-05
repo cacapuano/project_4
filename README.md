@@ -1,8 +1,10 @@
 # README.md
-## SciPy.fft
+
+## SciPy.fft or Numpy.fft
 Using fft is a great way to convert your data from the time domain to the frequency domain.
+
 ## In-class Activity
-Practice with a sinusodal function
+Practice with a sinusodal function. 
 
 1. Generate the continuous sinusoidal signal
 
