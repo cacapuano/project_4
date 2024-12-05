@@ -4,9 +4,9 @@
 Using ```fft``` and ```fftfreq``` is a great way to convert your data from the time domain to the frequency domain.
 
 ## In-class Activity
-Practice with a sinusodal function. 
+Practice with a known sinusodal function. 
 
-Setting-up the environment
+Setting-up the environment: 
 1. ```
    mkdir FFT
    ```
@@ -16,7 +16,7 @@ Setting-up the environment
 3. Open```sin_activity.py```
 
 
-Practice with a known function
+Find the lines that are missing: 
 
 1. Generate the continuous sinusoidal signal
 
