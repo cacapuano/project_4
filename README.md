@@ -27,8 +27,9 @@ Find the lines that are missing:
 1. Generate the continuous sinusoidal signal
 
 ```
-function = amplitude * np.sin(frequency * t + phase)
+function = amplitude * np.sin(2*np.pi*frequency * t + phase)
 ```
+***Don't forget the 2*np.pi because ω=2π⋅freq***
 
 2. Apply FFT
 
