@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # Parameters
 sampling_rate = 1000  # Samples per second
 duration = 1  # Duration in seconds
-frequency = 50  # Frequency of the sinusoidal wave in Hz
+frequency = 
 amplitude = 1  # Amplitude of the wave
 phase = 0  # Phase shift (in radians)
 
