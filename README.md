@@ -53,8 +53,8 @@ fft_freqs = np.fft.fftfreq(__)
 ```
 chmod +x sin_activity.py
 ```
-5. Run ```sin_activity.py```
-6. Check if the fft plot has the corresponding frequency you entered.
+4. Run ```sin_activity.py```
+5. Check if the fft plot has the corresponding frequency you entered.
 
 
 ## In-class Activity - Part II
@@ -69,5 +69,9 @@ You can do either:
 
 Find the frequencies with real data!!!
 1. Open ```FFT_DATA.txt``` and arbitrary choose TWO of the data sets.
-2. Run ```real_data_activity.py```
-3. Compare your plot with different parameters (e.g. thresholds).
+2. 3. Make the file excutable: 
+```
+chmod +x sin_activity.py
+```
+3. Run ```real_data_activity.py```
+4. Compare your plot with different parameters (e.g. thresholds).
