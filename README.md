@@ -63,7 +63,7 @@ Practice with a more complex known sinusodal function.
 You can do either: 
 - Run ```combine_sine_activity.py```
 
-# OR #
+### OR ###
 
 - Open```sin_activity.py```
 - Create a function of a combination of sine and cosine. ***The sampling rate is better to set to be similar order to your frequenc(ies).***
