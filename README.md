@@ -43,3 +43,4 @@ fft_freqs = np.fft.fftfreq(__)
 ```
 
 3. Run ```sin_activity.py```
+4. Check if the fft plot has the corresponding frequency you entered. 
