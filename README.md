@@ -24,7 +24,7 @@ Practice with a known function
 function = amplitude * np.sin(frequency * t + phase)
 ```
 
-5. Apply FFT
+2. Apply FFT
 
 Plug in the correct argument using the documentation (https://numpy.org/doc/2.1/reference/generated/numpy.fft.fft.html#numpy.fft.fft)
 
