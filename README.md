@@ -26,13 +26,15 @@ function = amplitude * np.sin(frequency * t + phase)
 
 2. Apply FFT
 
-Plug in the correct argument using the documentation (https://numpy.org/doc/2.1/reference/generated/numpy.fft.fft.html#numpy.fft.fft)
+Plug in the correct argument using the documentation 
+(https://numpy.org/doc/2.1/reference/generated/numpy.fft.fft.html#numpy.fft.fft)
 
 ```
 fft_result = np.fft.fft(__)
 ```
 
-Plug in the correct argument using the documentation (https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.fftfreq.html)
+Plug in the correct argument using the documentation 
+(https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.fftfreq.html)
 
 ```
 fft_freqs = np.fft.fftfreq(__)
