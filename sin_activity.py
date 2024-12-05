@@ -51,6 +51,3 @@ plt.ylabel("Magnitude")
 plt.tight_layout()
 filename = f'sinusoidal_fft_{frequency}Hz.png'
 plt.savefig(filename)
-
-# Output data for inspection
-time_data[:10], frequency_data[:10]  # Display the first 10 rows of each dataset
