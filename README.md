@@ -69,7 +69,7 @@ You can do either:
 
 Find the frequencies with real data!!!
 1. Open ```FFT_DATA.txt``` and arbitrary choose TWO of the data sets.
-2. 3. Make the file excutable: 
+2. Make the file excutable: 
 ```
 chmod +x sin_activity.py
 ```
