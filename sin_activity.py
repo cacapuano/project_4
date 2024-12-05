@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 # Parameters
 sampling_rate = 1000  # Samples per second
 duration = 1  # Duration in seconds
+# Determine your frequency
 frequency = 
 amplitude = 1  # Amplitude of the wave
 phase = 0  # Phase shift (in radians)
