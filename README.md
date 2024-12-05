@@ -16,7 +16,10 @@ Setting-up the environment:
 3. ```
    git clone https://github.com/cacapuano/project_4.git
    ```
-4. Open```sin_activity.py```
+4. ```
+   cd project_4
+   ```
+5. Open```sin_activity.py```
 
 
 Find the lines that are missing: 
