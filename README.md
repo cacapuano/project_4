@@ -62,9 +62,7 @@ chmod +x sin_activity.py
 Practice with a more complex known sinusodal function. 
 You can do either: 
 - Open```sin_activity.py```
-- Create a function of a combination of sine and cosine.
-
-***The sampling rate is better to set to be similar order to your frequenc(ies).***
+- Create a function of a combination of sine and cosine. ***The sampling rate is better to set to be similar order to your frequenc(ies).***
 
 ## In-class Activity - Part III
 
