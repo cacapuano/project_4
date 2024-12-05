@@ -88,3 +88,5 @@ chmod +x sin_activity.py
 4. Compare your plot with different parameters (e.g. thresholds).
 
 #### End of the tutorial ####
+
+Congrates! You know how to implement fft and fftfreq now. 
