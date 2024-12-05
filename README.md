@@ -11,9 +11,12 @@ Setting-up the environment:
    mkdir FFT
    ```
 2. ```
+   cd FFT
+   ```
+3. ```
    git clone https://github.com/cacapuano/project_4.git
    ```
-3. Open```sin_activity.py```
+4. Open```sin_activity.py```
 
 
 Find the lines that are missing: 
