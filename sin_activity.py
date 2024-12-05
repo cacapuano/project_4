@@ -4,14 +4,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Parameters
-sampling_rate = 1000  # Samples per second
-duration = 1  # Duration in seconds
+sampling_rate = 1000  # Resolution
+duration = 1  # How long you want the wave to continue
 # Determine your frequency
 frequency = 
-amplitude = 1  # Amplitude of the wave
-phase = 0  # Phase shift (in radians)
+amplitude = 1  
+phase = 0  
 
-# Time vector
+# Time
 t = np.linspace(0, duration, int(sampling_rate * duration), endpoint=False)
 
 # MISSING SECTION - generate signal, then apply fft and fftfreq
@@ -49,7 +49,8 @@ plt.xlabel("Frequency (Hz)")
 plt.ylabel("Magnitude")
 
 plt.tight_layout()
-plt.savefig('sinusodal_fft.png')
+filename = f'sinusoidal_fft_{frequency}Hz.png'
+plt.savefig(filename)
 
 # Output data for inspection
 time_data[:10], frequency_data[:10]  # Display the first 10 rows of each dataset
