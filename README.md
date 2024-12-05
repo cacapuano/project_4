@@ -29,7 +29,7 @@ Find the lines that are missing:
 ```
 function = amplitude * np.sin(2*np.pi*frequency * t + phase)
 ```
-***Don't forget the 2π, because ω = 2π⋅freq***
+***Don't forget the 2π, because ω = 2π ⋅ freq***
 
 2. Apply FFT
 
