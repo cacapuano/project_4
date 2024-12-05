@@ -6,7 +6,7 @@ Using ```fft``` and ```fftfreq``` is a great way to convert your data from the t
 ## In-class Activity - Part I
 Practice with a known sinusodal function. 
 
-Setting-up the environment: 
+#### Setting-up the environment: #### 
 1. ```
    mkdir FFT
    ```
@@ -27,7 +27,8 @@ P.S. if you're using linux to open the file, make sure you put
 ```
 at the beginning of your file. 
 
-Find the lines that are missing: 
+
+#### Find the lines that are missing: #### 
 
 1. Generate the continuous sinusoidal signal
 
@@ -46,7 +47,8 @@ Put the correct argument (__) using the documentation
 fft_result = np.fft.fft(__)
 ```
 
-Plug in the correct argument (__) using the documentation 
+
+#### Plug in the correct argument (__) using the documentation #### 
 
 (https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.fftfreq.html)
 
@@ -64,7 +66,7 @@ chmod +x sin_activity.py
 
 ## In-class Activity - Part II
 
-Practice with a more complex known sinusodal function. 
+#### Practice with a more complex known sinusodal function. #### 
 You can do either: 
 - Run ```combine_sine_activity.py```
 
@@ -75,7 +77,8 @@ You can do either:
 
 ## In-class Activity - Part III
 
-Find the frequencies with real data!!!
+#### Find the frequencies with real data!!! #### 
+
 1. Open ```FFT_DATA.txt``` and arbitrary choose TWO of the data sets.
 2. Make the file excutable: 
 ```
@@ -83,3 +86,5 @@ chmod +x sin_activity.py
 ```
 3. Run ```real_data_activity.py```
 4. Compare your plot with different parameters (e.g. thresholds).
+
+#### End of the tutorial ####
