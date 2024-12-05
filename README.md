@@ -21,6 +21,11 @@ Setting-up the environment:
    ```
 5. Open```sin_activity.py```
 
+P.S. if you're using linux to open the file, make sure you put 
+```
+#!/usr/bin/env python3
+```
+at the beginning of your file. 
 
 Find the lines that are missing: 
 
