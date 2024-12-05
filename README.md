@@ -15,8 +15,10 @@ Setting-up the environment
    ```
 3. Open```sin_activity.py```
 
+
 Practice with a known function
-4. Generate the continuous sinusoidal signal
+
+1. Generate the continuous sinusoidal signal
 
 ```
 function = amplitude * np.sin(frequency * t + phase)
