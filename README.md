@@ -89,4 +89,4 @@ chmod +x sin_activity.py
 
 #### End of the tutorial ####
 
-Congrates! ":tada:" You know how to implement fft and fftfreq now. 
+Congrates! 🎉 You know how to implement fft and fftfreq now. 
