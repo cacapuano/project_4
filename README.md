@@ -48,11 +48,12 @@ Plug in the correct argument (__) using the documentation
 fft_freqs = np.fft.fftfreq(__)
 ```
 
-3. ```
-   chmod +x sin_activity.py
-   ```
-4. Run ```sin_activity.py```
-5. Check if the fft plot has the corresponding frequency you entered.
+3. Make the file excutable: 
+```
+chmod +x sin_activity.py
+```
+5. Run ```sin_activity.py```
+6. Check if the fft plot has the corresponding frequency you entered.
 
 
 ## In-class Activity - Part II
