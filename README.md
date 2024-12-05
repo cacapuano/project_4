@@ -3,7 +3,7 @@
 ## SciPy.fft / Numpy.fft
 Using ```fft``` and ```fftfreq``` is a great way to convert your data from the time domain to the frequency domain.
 
-## In-class Activity
+## In-class Activity - Part I
 Practice with a known sinusodal function. 
 
 Setting-up the environment: 
@@ -43,4 +43,20 @@ fft_freqs = np.fft.fftfreq(__)
 ```
 
 3. Run ```sin_activity.py```
-4. Check if the fft plot has the corresponding frequency you entered. 
+4. Check if the fft plot has the corresponding frequency you entered.
+
+
+## In-class Activity - Part II
+
+Practice with a more complex known sinusodal function. 
+You can do either: 
+- Open```sin_activity.py```
+- Create a function of a combination of sine and cosine. 
+
+
+## In-class Activity - Part III
+
+Find the frequencies with real data!!!
+1. Open ```FFT_DATA.txt``` and arbitrary choose TWO of the data sets.
+2. Run ```real_data_activity.py```
+3. Compare your plot with different parameters (e.g. thresholds).
