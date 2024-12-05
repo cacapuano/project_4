@@ -16,7 +16,7 @@ class FFTAnalyzer:
         self.positive_freq = None
         self.positive_asd = None
 
-    def load_data(self): # load your data - prompts user to specify path of data
+    def load_data(self):  # Load the data from the specified file path
         try:
             self.data = pd.read_csv(
                 self.file_path, sep="\t", comment=";", header=None,
@@ -27,33 +27,34 @@ class FFTAnalyzer:
             print(f"Error loading the file: {e}")
             exit()
 
-    def perform_fft(self, signal_column): #performs FFT on the specified signal column."""
-        time = self.data["Time(s)"].values # time data
-        signal = self.data[signal_column].values # signal data
-        dt = time[1] - time[0]  # time step
-# MISSING SECTION - add number of sample, and apply fft and fftfreq        
-	N = 
+    def perform_fft(self, signal_column):  # Perform FFT on the specified signal column
+        time = self.data["Time(s)"].values  # Extract time data
+        signal = self.data[signal_column].values  # Extract signal data
+        dt = time[1] - time[0]  # Calculate time step
 
-        self.freq =   
-        fft_signal = 
+	# MISSING SECTION - add the number of samples, and apply the fftfreq and fft to the signal 
+	N =   # Number of samples
 
-        psd = np.abs(fft_signal)**2 / N  # calculate power Spectral Density
-        self.asd = np.sqrt(psd)  # amplitude of the Spectral Density
+        self.freq =   # Generate frequency array
+        fft_signal =   # Perform FFT
 
-        # keep only positive frequencies, ignore negative freq.
+	    
+        psd = np.abs(fft_signal)**2 / N  # Power Spectral Density
+        self.asd = np.sqrt(psd)  # Amplitude Spectral Density
+
+        # Keep only positive frequencies
         self.positive_freq = self.freq[:N//2]
         self.positive_asd = self.asd[:N//2]
 
-    def detect_peaks(self, min_amplitude=0.01, prominence=0.005, width=None) # detects peaks in the ASD with a focus on tall amplitudes.
+    def detect_peaks(self, min_amplitude=0.01, prominence=0.005, width=None):  # Detect peaks in ASD
         while True:
-            # find peaks with constraints so that we can ignore signal noise
             peaks, properties = find_peaks(
                 self.positive_asd, height=min_amplitude, prominence=prominence, width=width
             )
             peak_frequencies = self.positive_freq[peaks]
             peak_amplitudes = self.positive_asd[peaks]
 
-            # print detected peaks
+            # Print detected peaks
             print("\nDetected Peaks:")
             if len(peaks) > 0:
                 for i, (freq, amp) in enumerate(zip(peak_frequencies, peak_amplitudes)):
@@ -61,7 +62,7 @@ class FFTAnalyzer:
             else:
                 print("No peaks detected with the current parameters.")
 
-            # show the plot with current thresholds
+            # Show the plot with current thresholds
             plt.figure(figsize=(10, 6))
             plt.loglog(self.positive_freq, self.positive_asd, label='ASD')
             if len(peaks) > 0:
@@ -73,7 +74,7 @@ class FFTAnalyzer:
             plt.grid(True)
             plt.show()
 
-            # prompt the user to adjust thresholds or accept the results
+            # Prompt the user to adjust thresholds or accept the results
             user_input = input(
                 "\nAdjust thresholds? (y/n) or type 'reset' to enter new values: "
             ).strip().lower()
@@ -83,8 +84,8 @@ class FFTAnalyzer:
                 try:
                     min_amplitude = float(input("Enter new minimum amplitude (e.g., 0.01): "))
                     prominence = float(input("Enter new prominence threshold (e.g., 0.005): "))
-                    width = float(input("Enter new minimum width (e.g., 1) or leave blank: ") or "None")
-                    width = None if width == "None" else float(width)
+                    width = input("Enter new minimum width (e.g., 1) or leave blank: ")
+                    width = None if width.strip() == "" else float(width)
                 except ValueError:
                     print("Invalid input. Retaining current thresholds.")
             elif user_input == 'n':
@@ -95,12 +96,11 @@ class FFTAnalyzer:
 
         return peak_frequencies, peak_amplitudes
 
-    def plot_asd(self, save_path=None, peaks=None):
+    def plot_asd(self, save_path=None, peaks=None):  # Plot the ASD and optionally mark peaks
         plt.figure(figsize=(10, 6))
         plt.loglog(self.positive_freq, self.positive_asd, label='ASD')
 
-        # mark peaks if found
-        if peaks:
+        if peaks:  # Mark peaks if provided
             peak_frequencies, peak_amplitudes = peaks
             plt.scatter(peak_frequencies, peak_amplitudes, color='red', label='Peaks')
 
@@ -110,7 +110,7 @@ class FFTAnalyzer:
         plt.legend()
         plt.grid(True)
 
-        if save_path:
+        if save_path:  # Save the plot if a path is provided
             plt.savefig(save_path)
         plt.show()
 
