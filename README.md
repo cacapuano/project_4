@@ -1,7 +1,7 @@
 # README.md
 
 ## SciPy.fft or Numpy.fft
-Using fft is a great way to convert your data from the time domain to the frequency domain.
+Using ```fft``` and ```fftfreq``` is a great way to convert your data from the time domain to the frequency domain.
 
 ## In-class Activity
 Practice with a sinusodal function. 
