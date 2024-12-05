@@ -7,9 +7,15 @@ Using ```fft``` and ```fftfreq``` is a great way to convert your data from the t
 Practice with a sinusodal function. 
 
 Setting-up the environment
-1. ```mkdir FFT```
-2. ```git clone https://github.com/cacapuano/project_4.git```
-3. Open ```sin_activity.py```
+1. ```
+   mkdir FFT
+   ```
+2. ```
+   git clone https://github.com/cacapuano/project_4.git
+   ```
+3. Open```
+   sin_activity.py
+   ```
 
 Practice with a known function
 4. Generate the continuous sinusoidal signal
@@ -20,13 +26,16 @@ function = amplitude * np.sin(frequency * t + phase)
 
 5. Apply FFT
 
-Plug in the correct argument refering to https://numpy.org/doc/2.1/reference/generated/numpy.fft.fft.html#numpy.fft.fft
+Plug in the correct argument using the documentation (https://numpy.org/doc/2.1/reference/generated/numpy.fft.fft.html#numpy.fft.fft)
+
 ```
 fft_result = np.fft.fft(__)
 ```
-Plug in the correct argument refering to https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.fftfreq.html
+
+Plug in the correct argument using the documentation (https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.fftfreq.html)
+
 ```
 fft_freqs = np.fft.fftfreq(__)
 ```
 
-3. Run ```
+3. Run ```sin_activity.py```
