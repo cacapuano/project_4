@@ -13,9 +13,7 @@ Setting-up the environment
 2. ```
    git clone https://github.com/cacapuano/project_4.git
    ```
-3. Open```
-   sin_activity.py
-   ```
+3. Open```sin_activity.py```
 
 Practice with a known function
 4. Generate the continuous sinusoidal signal
