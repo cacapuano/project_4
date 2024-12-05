@@ -9,17 +9,17 @@ Practice with a sinusodal function.
 1. Generate the continuous sinusoidal signal
 
 ```
-signal = amplitude * np.sin(2 * np.pi * frequency * t + phase)
+signal = amplitude * np.sin(frequency * t + phase)
 ```
 
 2. Apply FFT
 
 ```
-fft_result = np.fft.fft(signal)
+fft_result = np.fft.fft(__)
 ```
 
 ```
-fft_freqs = np.fft.fftfreq(len(t), 1/sampling_rate)
+fft_freqs = np.fft.fftfreq(__)
 ```
 
 4. Get the magnitude of the FFT (only positive frequencies)
